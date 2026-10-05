@@ -1,0 +1,6 @@
+{
+  "name": "مجوهرات الزهرة - El Zahra Haute Joaillerie",
+  "description": "المنصة الرسمية لمجوهرات الزهرة بأسوان تحت إشراف وإدارة الخواجة بيمن ابراهيم - بورصة الذهب اليومية، الحاسبة الفورية للمصوغات، والمجموعات الملكية الفاخرة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

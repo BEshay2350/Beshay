@@ -1,0 +1,21 @@
+# مجوهرات الزهرة - إعدادات الاستضافة المشتركة و cPanel
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # توجيه طلبات أسعار الذهب إلى get_prices.php تلقائياً
+  RewriteRule ^api/gold-prices/?$ get_prices.php [QSA,L]
+
+  # توجيه التصفح لملف index.html أو index.php بدون تعارض
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.html [L]
+</IfModule>
+
+# تفعيل ضغط الملفات وتسريع التصفح
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# منع تصفح المجلدات
+Options -Indexes

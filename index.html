@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Compatibility patch for environments attempting to set window.fetch
+      (function() {
+        try {
+          var _rawFetch = typeof window !== 'undefined' ? window.fetch : null;
+          if (_rawFetch) {
+            var _activeFetch = _rawFetch.bind(window);
+            Object.defineProperty(window, 'fetch', {
+              get: function() {
+                return _activeFetch;
+              },
+              set: function(newFetch) {
+                _activeFetch = newFetch;
+              },
+              configurable: true,
+              enumerable: true,
+            });
+          }
+        } catch (e) {
+          // Continue gracefully
+        }
+      })();
+    </script>
+    <title>مجوهرات الزهرة | إدارة الخواجة بيمن ابراهيم - أسوان</title>
+    <meta name="description" content="المنصة الرسمية لمجوهرات الزهرة بأسوان تحت إشراف وإدارة الخواجة بيمن ابراهيم - بورصة الذهب اليومية، الحاسبة الفورية للمصوغات، والمجموعات الملكية الفاخرة." />
+    <meta name="keywords" content="مجوهرات الزهرة, الخواجة بيمن ابراهيم, أسعار الذهب في أسوان, سعر الذهب اليوم في مصر, عيار 21 اليوم أسوان, سبائك ذهب أسوان, صاغة أسوان, بورصة الذهب" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="مجوهرات الزهرة - الخواجة بيمن ابراهيم" />
+
+    <!-- OpenGraph & Twitter Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="مجوهرات الزهرة" />
+    <meta property="og:title" content="مجوهرات الزهرة | إدارة الخواجة بيمن ابراهيم - أسوان" />
+    <meta property="og:description" content="المنصة الرسمية لمجوهرات الزهرة بأسوان تحت إشراف وإدارة الخواجة بيمن ابراهيم - بورصة الذهب اليومية، الحاسبة الفورية للمصوغات، والمجموعات الملكية الفاخرة." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="مجوهرات الزهرة | إدارة الخواجة بيمن ابراهيم - أسوان" />
+    <meta name="twitter:description" content="المنصة الرسمية لمجوهرات الزهرة بأسوان تحت إشراف وإدارة الخواجة بيمن ابراهيم - بورصة الذهب اليومية والحاسبة الفورية." />
+
+    <!-- Schema.org Rich Structured Data for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "JewelryStore",
+      "name": "مجوهرات الزهرة",
+      "alternateName": "Al-Zahra Jewelry Aswan",
+      "description": "عراقة الصياغة وتجارة الذهب والسبائك المعتمدة في صعيد مصر ومحافظة أسوان بإدارة الخواجة بيمن ابراهيم.",
+      "telephone": "+201227887660",
+      "priceRange": "$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع الصاغة التجاري",
+        "addressLocality": "أسوان",
+        "addressRegion": "محافظة أسوان",
+        "addressCountry": "EG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.0889,
+        "longitude": 32.8998
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "10:00",
+        "closes": "22:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "سبائك ومصوغات ذهبية معتمدة",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "سبائك ذهب عيار 24 معتمدة"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "جنيهات ذهب بي تي سي وسام عيار 21"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "مجوهرات ومصوغات عيار 18 و 21"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  </head>
+  <body class="bg-[#faf7f2] text-[#1a1a1a] antialiased selection:bg-[#c5a059] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

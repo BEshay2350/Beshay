@@ -1,0 +1,24 @@
+# إعدادات Apache / LiteSpeed المثلى لاستضافات cPanel المشتركة
+# مجوهرات الزهرة - إدارة الخواجة بيمن ابراهيم
+
+# 1. تحديد الملف الافتراضي (index.php أولاً ثم index.html)
+DirectoryIndex index.php index.html
+
+# 2. تفعيل ضغط GZIP لتسريع تحميل الموقع
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# 3. إعدادات الكاش والترويسات
+<IfModule mod_headers.c>
+  # تفعيل CORS لقراءة الأسعار من أي دومين
+  Header set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Methods "GET, OPTIONS"
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# 4. منع عرض مجلدات السيرفر
+Options -Indexes
+
+# 5. ضبط الترميز الافتراضي UTF-8
+AddDefaultCharset UTF-8
